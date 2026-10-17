@@ -1,0 +1,34 @@
+{
+  "status": "BLOCKED",
+  "contract": "contract.json",
+  "source": "examples/breaking.jsonl",
+  "checked_records": 4,
+  "issue_count": 3,
+  "generated_at": "2026-10-17T19:10:48+00:00",
+  "issues": [
+    {
+      "line": 2,
+      "path": "user_id",
+      "rule": "type",
+      "expected": "integer",
+      "actual": "string",
+      "message": "user_id: expected integer; received string"
+    },
+    {
+      "line": 3,
+      "path": "sync_status",
+      "rule": "enum",
+      "expected": "success, error",
+      "actual": "'pending'",
+      "message": "sync_status: expected success, error; received 'pending'"
+    },
+    {
+      "line": 4,
+      "path": "invoice_id",
+      "rule": "required",
+      "expected": "present",
+      "actual": "missing",
+      "message": "invoice_id: expected present; received missing"
+    }
+  ]
+}

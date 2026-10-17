@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Invoice synchronization event contract",
+  "description": "Illustrative contract for a synthetic B2B data pipeline.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_name", "user_id", "invoice_id", "sync_status", "occurred_at"],
+  "properties": {
+    "event_name": {"const": "invoice_synced"},
+    "user_id": {"type": "integer"},
+    "invoice_id": {"type": "string"},
+    "sync_status": {"type": "string", "enum": ["success", "error"]},
+    "occurred_at": {"type": "string"}
+  }
+}

@@ -1,0 +1,2 @@
+{"event_name":"invoice_synced","user_id":1042,"invoice_id":"INV-2081","sync_status":"success","occurred_at":"2026-10-17T10:00:00Z"}
+{"event_name":"invoice_synced","user_id":1043,"invoice_id":"INV-2082","sync_status":"error","occurred_at":"2026-10-17T10:05:00Z"}
